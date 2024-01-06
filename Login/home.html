@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=width,initial-	scale=1.0">
+	<title>login</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href='style.css'>
+</head>
+
+<main>
+<div class="wrapper">
+	<div class="login-page">
+	<form action="">
+	 <h2>LOGIN</h2>
+	 <div class="inputbox">
+		<input type="text" required>
+		<span>username</span>
+		<i class='bx bx-user-circle'></i>
+		</div>
+
+		<div class="inputbox">
+		<input type="password" id="password"required>
+		<span>password</span>
+		<i class='bx bx-lock' id="lock"></i>
+		</div>
+
+<script>
+	let lock = document.getElementById("lock");
+	let password = document.getElementById("password");
+
+	lock.onclick = function(){
+		if(password.type == "password"){
+			password.type = "text";
+			lock.src = "<i class='bx bx-lock-open'></i>";
+		}
+		else {
+			password.type = "password";
+			lock.src = "<i class='bx bx-lock'></i>";
+		}
+	}
+
+</script>
+
+		<div class="subject">
+			<label><input type="checkbox"> Remember me</label>
+			<a href="">Forgot password</a>
+		</div>
+		<button type="submit" class="login">Login</button>
+		<div class="register">
+			<p><a href="#">Register? </a>nha you don't have to use it</p>
+			<p>I just made this page for fun</p>
+		</div>
+</div>
+
+<div class="forgot">
+	<span>deep breath</span>
+</div>
+
+</div>
+
+
+</main>
